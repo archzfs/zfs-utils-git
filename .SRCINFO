@@ -1,6 +1,6 @@
 pkgbase = zfs-utils-git
 	pkgdesc = Kernel module support files for the Zettabyte File System.
-	pkgver = 2020.12.07.r6433.g8e8fdce68
+	pkgver = 2020.12.08.r6434.g1a735e763
 	pkgrel = 1
 	url = http://zfsonlinux.org/
 	install = zfs-utils.install
@@ -23,7 +23,7 @@ pkgbase = zfs-utils-git
 	backup = etc/default/zfs
 	backup = etc/modules-load.d/zfs.conf
 	backup = etc/sudoers.d/zfs
-	source = git+https://github.com/zfsonlinux/zfs.git#commit=8e8fdce682f83d4ba4362fa916f42ec3ad80a4c3
+	source = git+https://github.com/zfsonlinux/zfs.git#commit=1a735e763a4e008d654c0239f905fec2cc3cfd42
 	source = zfs-utils.initcpio.install
 	source = zfs-utils.initcpio.hook
 	source = zfs-utils.initcpio.zfsencryptssh.install
