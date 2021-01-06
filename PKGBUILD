@@ -6,9 +6,9 @@
 # http://github.com/archzfs/archzfs
 #
 pkgname="zfs-utils-git"
-_commit='064c2cf40ea367f0b7608a3e8b537f87190f52cb'
+_commit='06346cc5b50bef7327f7c901b92cbadab7fd7265'
 
-pkgver=2020.12.30.r6489.g064c2cf40
+pkgver=2021.01.02.r6491.g06346cc5b
 pkgrel=1
 pkgdesc="Kernel module support files for the Zettabyte File System."
 makedepends=("python" "python-setuptools" "python-cffi" "git")
@@ -32,10 +32,6 @@ install=zfs-utils.install
 conflicts=("zfs-utils" "spl-utils")
 replaces=("spl-utils-common-git" "zfs-utils-common-git")
 backup=('etc/zfs/zed.d/zed.rc' 'etc/default/zfs' 'etc/modules-load.d/zfs.conf' 'etc/sudoers.d/zfs')
-prepare() {
-    cd "${srcdir}/zfs"
-    patch -Np1 -i ${srcdir}/autoconf-270-compatibility.patch
-}
 
 build() {
     cd "${srcdir}/zfs"
